@@ -27,7 +27,7 @@ jobs:
           args:
             push
       - name: Set version env variable
-        run: echo "VERSION=$(grep -m1 'version' < Ballerina.toml | cut -f2 -d \")"
+        run: echo "VERSION=$(grep -m1 'version' < Ballerina.toml | cut -f2 -d \")" >> $GITHUB_ENV
       - name: GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
