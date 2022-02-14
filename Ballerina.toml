@@ -1,6 +1,6 @@
 [package]
 org="kaneeldiasjkcnx"
-name="mysql.driver"
+name="mysql.driverx"
 version="1.2.1"
 authors=["Ballerina"]
 keywords=["Azure", "MySQL"]
