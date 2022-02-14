@@ -1,7 +1,7 @@
 [package]
 org="kaneeldiasjkcnx"
-name="mysql.driverx"
-version="1.2.1"
+name="mysql.driver"
+version="1.2.0"
 authors=["Ballerina"]
 keywords=["Azure", "MySQL"]
 repository="https://github.com/ballerina-platform/module-ballerinax-mysql.driver"

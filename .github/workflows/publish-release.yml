@@ -9,19 +9,16 @@ jobs:
     #if: github.repository_owner == 'ballerina-platform'
     steps:
       - uses: actions/checkout@v2
-
       - name: Ballerina Build
         uses: ballerina-platform/ballerina-action/@master
         with:
           args:
             build
-
       - name: Ballerina Pack
         uses: ballerina-platform/ballerina-action/@master
         with:
           args:
             pack
-
       - name: Ballerina Push
         uses: ballerina-platform/ballerina-action/@master
         env:
@@ -29,10 +26,8 @@ jobs:
         with:
           args:
             push
-
       - name: Set version env variable
         run: echo "VERSION=$(grep -m1 'version' < Ballerina.toml | cut -f2 -d \")"
-
       - name: GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.BALLERINA_BOT_TOKEN }}
