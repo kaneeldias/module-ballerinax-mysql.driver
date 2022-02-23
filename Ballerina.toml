@@ -1,5 +1,5 @@
 [package]
-org="ballerinax"
+org="kaneeltest2"
 name="mysql.driver"
 version="1.2.0"
 authors=["Ballerina"]
